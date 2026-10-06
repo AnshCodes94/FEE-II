@@ -1,0 +1,366 @@
+@import url("https://fonts.googleapis.com/css2?family=Antic+Slab&family=Courgette&family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Lustria&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prata&family=Quattrocento:wght@400;700&family=Questrial&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100dvh;
+  font-family: Poppins, sans-serif;
+  transition: all ease 0.5s;
+}
+
+.box {
+  padding: 0.5rem;
+  height: 100%;
+  width: 100%;
+}
+
+.box1 {
+  height: 8rem;
+  width: 16rem;
+  border: 1px solid;
+  border-radius: 8px;
+}
+
+.box2 {
+  height: 12rem;
+  width: 24rem;
+  border: 1px solid;
+  border-radius: 8px;
+}
+
+.ns {
+  flex-shrink: 0;
+}
+
+.b1 {
+  border: 1px solid skyblue;
+}
+.b2 {
+  border: 2px solid skyblue;
+}
+
+.p1 {
+  padding: 0.5rem;
+}
+.p2 {
+  padding: 1rem;
+}
+.p3 {
+  padding: 1.5rem;
+}
+.px {
+  padding: 0 5px;
+}
+.py {
+  padding: 5px 0;
+}
+.bg0 {
+  background-color: transparent;
+}
+
+.bg10 {
+  background-color: white;
+  color: black;
+}
+.bg11 {
+  background-color: hsl(0, 70%, 50%);
+  color: white;
+}
+
+.bg20 {
+  background-color: black;
+  color: skyblue;
+}
+
+.bg30 {
+  background-color: darkred;
+  color: #f1f1f1;
+}
+.bg40 {
+  background-color: seagreen;
+  color: #f1f1f1;
+}
+
+.bg50 {
+  background-color: hsl(215, 100%, 50%);
+  color: #f1f1f1;
+}
+.bg51 {
+  background-color: hsl(215, 100%, 30%);
+  color: #f1f1f1;
+}
+.bg52 {
+  background-color: hsl(215, 100%, 10%);
+  color: #f1f1f1;
+}
+
+.fx {
+  display: flex;
+  gap: 0.5rem;
+}
+.fxc {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.fy {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.fyc {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+.jsb {
+  justify-content: space-between;
+}
+.fwrap {
+  flex-wrap: wrap;
+}
+
+.card1 {
+  height: 6rem;
+  width: 12rem;
+  border: 1px solid;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.card2 {
+  height: 9rem;
+  width: 18rem;
+  border: 1px solid;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.card3 {
+  height: 12rem;
+  width: 24rem;
+  border: 1px solid;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+button {
+  padding: 5px 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: inherit;
+  border: none;
+  width: fit-content;
+}
+
+.btn1 {
+  padding: 2px 5px;
+}
+
+.btn2 {
+  padding: 5px 15px;
+  /* outline: none; */
+}
+
+.btn3 {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+}
+
+.btn4 {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+}
+
+button:hover {
+  outline: 2px solid skyblue;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+span {
+  display: inline-block;
+  text-align: center;
+}
+.sp1 {
+  width: 1rem;
+  text-align: center;
+}
+.sp2 {
+  width: 2rem;
+  text-align: center;
+}
+.sp3 {
+  width: 3rem;
+  text-align: center;
+}
+
+select {
+  font-family: inherit;
+}
+
+.sh1 {
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+.sh2 {
+  box-shadow: 0 5px 5px rgba(255, 255, 255, 0.2);
+}
+
+a {
+  text-decoration: none;
+  color: yellow;
+  padding: 2px 5px;
+  transition: all ease 0.3s;
+  border: 2px solid transparent;
+}
+a:hover {
+  color: yellow;
+  border-bottom: 2px solid yellow;
+}
+a.active {
+  border-bottom: 2px solid yellow;
+}
+input {
+  font-family: inherit;
+  width: 100%;
+  height: 32px;
+  padding: 3px 10px;
+  outline: none;
+  border: none;
+}
+
+textarea {
+  font-family: inherit;
+  width: 100%;
+  height: 5rem;
+  font-size: 0.75rem;
+  padding: 5px 10px;
+  line-height: 1.35;
+  /* resize: none; */
+  outline: none;
+  border: none;
+}
+.mt1 {
+  margin-top: 0.5rem;
+}
+.mt2 {
+  margin-top: 1rem;
+}
+.mt3 {
+  margin-top: 1.5rem;
+}
+.mb1 {
+  margin-bottom: 0.5rem;
+}
+.mb2 {
+  margin-bottom: 1rem;
+}
+.mb3 {
+  margin-bottom: 1.5rem;
+}
+.fss {
+  font-size: 1rem;
+}
+.fsm {
+  font-size: 1.25rem;
+}
+.fsl {
+  font-size: 1.5rem;
+}
+.fs1 {
+  font-size: 1.1rem;
+}
+.fs2 {
+  font-size: 1.2rem;
+}
+.fs3 {
+  font-size: 1.3rem;
+}
+.fs4 {
+  font-size: 1.4rem;
+}
+.fs5 {
+  font-size: 1.5rem;
+}
+
+.c1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.h100 {
+  min-height: 100dvh;
+}
+.h95 {
+  height: calc(100dvh - 5rem);
+}
+.hf {
+  min-height: 100dvh;
+}
+
+/* width percentage */
+.w100 {
+  width: 100%;
+}
+.w50 {
+  width: 50%;
+}
+.w33 {
+  width: 33%;
+}
+
+/* fixed width */
+.w5 {
+  width: 5rem;
+}
+.w10 {
+  width: 10rem;
+}
+.w15 {
+  width: 15rem;
+}
+.w20 {
+  width: 20rem;
+}
+
+/* box height */
+.bh3 {
+  height: 3rem;
+}
+.bh5 {
+  height: 5rem;
+}
+.bh10 {
+  height: 10rem;
+}
+.bh15 {
+  height: 15rem;
+}
+.bh20 {
+  height: 20rem;
+}
+
+@media screen and (min-width: 768px) {
+  .c1 {
+    flex-direction: row;
+  }
+}
+
