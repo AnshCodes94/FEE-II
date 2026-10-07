@@ -8,6 +8,7 @@ import { Product1 } from "./Pages/Product1.jsx";
 import { Product2 } from "./Pages/Product2.jsx";
 import { Product3 } from "./Pages/Product3.jsx";
 import { PageNotFound } from "./Pages/PageNotFound.jsx";
+import { StoreApp } from "./StoreApp.jsx";
 
 export function App() {
     return (
@@ -18,6 +19,7 @@ export function App() {
                     <Route path="/" element={<Home />} />
                     <Route path="/about" element={<About />} />
                     <Route element={<ProtectedRoutes />}>
+                    <Route path="/store" element={<StoreApp />} />
 
                     {/* Products Sidebar Page with Nested Sub-routes */}
                     <Route path="/products" element={<Product />}>
