@@ -1,14 +1,32 @@
-import { Link, Routes, Route, Outlet } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { Link, Outlet } from "react-router-dom";
 
-export function Product(){
-    return(
+export function Products() {
+    const [products, setProducts] = useState([]);
+
+    useEffect(() => {
+        const getData = localStorage.getItem("products");
+        const arrayObject = getData ? JSON.parse(getData) : [];
+        setProducts(arrayObject);
+    },[]);
+
+    const categories = products.map ((p) => p.category);
+    const uniqueCategories = [...new Set(categories)];
+
+    const clicks = uniqueCategories.map((c) =>(
+        <div key={c} className="mb1">
+            <Link to={`/products/${encodeURIComponent(c)}`}>{c}</Link>
+        </div>
+    ));
+
+    return (
         <div className="h95 fx">
-            <aside className="fy w10 p3 bg52">
-                <Link to="product1">Product1</Link>
-                <Link to="product2">Product2</Link>
-                <Link to="product3">Product3</Link>
+            <aside className="bg52 w10 p3">
+                <h3 className="mb3">Categories</h3>
+                {clicks}
             </aside>
-            <main>
+
+            <main className="p2" style={{ flex:"1"}}>
                 <Outlet/>
             </main>
         </div>
