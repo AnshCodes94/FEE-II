@@ -14,7 +14,7 @@ body {
 .card {
   width: 250px;
   padding: 20px;
-  background-color: white;
+  background-color: lightyellow;
   border-radius: 10px;
   text-align: center;
 }
