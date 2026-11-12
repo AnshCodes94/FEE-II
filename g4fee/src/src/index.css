@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Antic+Slab&family=Courgette&family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Lustria&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prata&family=Quattrocento:wght@400;700&family=Questrial&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100dvh;
+  font-family: Poppins, sans-serif;
+  transition: all ease 0.5s;
+}
+section {
+  min-height: 100dvh;
+}
+.bg1 {
+  background-color: hsl(215, 100%, 50%);
+  color: #f1f1f1;
+}
+
+.bg2 {
+  background-color: black;
+  color: skyblue;
+}
+
+.fx {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+.fxc {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.fy {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.fyc {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.box1 {
+  padding: 1rem;
+  height: 8rem;
+  width: 16rem;
+  border: 1px solid;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+.box2 {
+  padding: 1rem;
+  height: 12rem;
+  width: 24rem;
+  border: 1px solid;
+  border-radius: 8px;
+}
+
+.b1 {
+  border: 1px solid skyblue;
+  border-radius: 5px;
+}
+.b2 {
+  border: 2px solid skyblue;
+  border-radius: 5px;
+}
+.card {
+  padding: 1rem;
+  height: 12rem;
+  width: 24rem;
+  border: 1px solid;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+button {
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: inherit;
+  border: none;
+  width: fit-content;
+}
+
+.btn1 {
+  padding: 2px 5px;
+}
+
+.btn2 {
+  padding: 5px 15px;
+  /* outline: none; */
+}
+
+.btn3 {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+}
+
+.btn4 {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+}
+
+button:hover {
+  outline: 2px solid skyblue;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+/* Allow inline widths to take effect */
+span:not([style*="width"]) {
+  display: inline-block;
+  width: 7rem;
+}
+
+.sp1 {
+  width: 1rem;
+  text-align: center;
+}
+.sp2 {
+  width: 2rem;
+  text-align: center;
+}
+.sp3 {
+  width: 2rem;
+  text-align: center;
+}
+
+select {
+  font-family: inherit;
+}
+.p1 {
+  padding: 0.5rem;
+}
+.p2 {
+  padding: 1rem;
+}
+
+.s1 {
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+a {
+  text-decoration: none;
+  color: azure;
+  transition: all ease 0.3s;
+  border: 2px solid transparent;
+}
+a:hover {
+  color: yellow;
+  border-bottom: 2px solid yellow;
+}
+input {
+  font-family: inherit;
+  width: 100%;
+  height: 32px;
+  padding: 3px 10px;
+  outline: none;
+  border: none;
+}
+.bg3 {
+  background-color: #f5f5f5;
+  color: #333;
+}
+.box {
+  padding: 0.5rem;
+  height: 100%;
+  width: 100%;
+}
+textarea {
+  font-family: inherit;
+  width: 100%;
+  height: 5rem;
+  font-size: 0.75rem;
+  padding: 5px 10px;
+  line-height: 1.35;
+  /* resize: none; */
+  outline: none;
+  border: none;
+}
+.mt1 {
+  margin-top: 0.5rem;
+}
+.mt2 {
+  margin-top: 1rem;
+}
+.mb1 {
+  margin-bottom: 0.5rem;
+}
+.mb2 {
+  margin-bottom: 1rem;
+}
+.fs1 {
+  font-size: 1.1rem;
+}
+.fs2 {
+  font-size: 1.2rem;
+}
+.fs3 {
+  font-size: 1.3rem;
+}
+.fs4 {
+  font-size: 1.4rem;
+}
+.fs5 {
+  font-size: 1.5rem;
+}
+
+.c1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .c1 {
+    flex-direction: row;
+  }
+}
