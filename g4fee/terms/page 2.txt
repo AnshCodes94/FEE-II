@@ -9,3 +9,14 @@ JS is the brain behind the scenes that makes buttons actually work, loads new da
 3. Function
 A function is just a handy chunk of code you write once to do a specific job, and then reuse whenever you need it. 
 In React, every single piece of your screen—like a navbar or button—is actually built as a function.
+
+4. CSS
+CSS is what makes a plain webpage actually look good. 
+It controls colors, fonts, spacing, and how layouts adapt to phones or 
+laptops—turning boring black-and-white text into a clean, modern design.
+The styling engine
+
+5. UI
+UI is everything you see and touch on your screen—buttons, icons, menus, and text boxes. 
+A great UI makes an app feel intuitive and inviting so users instantly know where to click.
+The Visual screen
