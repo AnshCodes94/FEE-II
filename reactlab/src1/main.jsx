@@ -5,9 +5,9 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./index.css";
 
-const Home = lazy(() => import("./Home"));
+export const Home = lazy(() => import("./Home"));
 
-const StudentsApp = lazy(() => import("./StudentsApp"));
+export const StudentsApp = lazy(() => import("./StudentsApp"));
 
 createRoot(document.getElementById("root")).render(
     <StrictMode>
