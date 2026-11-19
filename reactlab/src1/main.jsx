@@ -4,10 +4,12 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./index.css";
+import { AddForm } from "./AddForm";
+import { UpdateForm } from "./UpdateForm";
 
-export const Home = lazy(() => import("./Home"));
+const Home = lazy(() => import("./Home"));
 
-export const StudentsApp = lazy(() => import("./StudentsApp"));
+const StudentsApp = lazy(() => import("./StudentsApp"));
 
 createRoot(document.getElementById("root")).render(
     <StrictMode>
@@ -18,6 +20,9 @@ createRoot(document.getElementById("root")).render(
                     <Route path="/" element={<Home />} />
                     <Route path="/login" element={<StudentsApp />} />
                     <Route path="/logout" element={<Home />} />
+                    <Route path="/studentsApp" element={<StudentsApp />} />
+                    <Route path="/add" element={<AddForm />} />
+                    <Route path="/update/:id" element={<UpdateForm />} />
                 </Routes>
             </Suspense>
         </Router>
